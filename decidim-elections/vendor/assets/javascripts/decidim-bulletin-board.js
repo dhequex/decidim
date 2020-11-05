@@ -1,0 +1,1 @@
+/Users/beagleknight/projects/decidim-bulletin-board/decidim-bulletin-board-client-js/dist/main.js
