@@ -50,22 +50,5 @@ $(() => {
 
   $(document).ready(() => {
     identificationKeys()
-
-    // TODO: real implementation
-    const client = new decidimBulletinBoard.Client({
-      apiEndpointUrl: "http://localhost:8000/api",
-      wsEndpointUrl: "ws://localhost:8000/cable",
-    });
-    
-    const subscription = client.subscribeToElectionLogEntriesUpdates(
-      { electionId: "1" },
-      (res) => console.log(res)
-    );
-    console.log("Subscribed!");
-    
-    setTimeout(() => {
-      console.log("Unsubscribed!");
-      subscription.unsubscribe();
-    }, 20000); 
   })
 })
