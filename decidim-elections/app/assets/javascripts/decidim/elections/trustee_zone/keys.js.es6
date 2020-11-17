@@ -20,6 +20,7 @@ $(() => {
       const bulletinBoardClient = new Client({
         apiEndpointUrl: "http://localhost:8000/api",
         wsEndpointUrl: "ws://localhost:8000/cable",
+        trusteeUniqueId: `${$keyCeremony.data('trusteeUniqueId')}`
       });
         
       const keyCeremony = new KeyCeremony({
